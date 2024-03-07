@@ -20,14 +20,14 @@ const Header = () => {
     { name: "Series", icon: HiTv },
   ];
   return (
-    <header className="flex items-center justify-between px-8 py-4">
+    <header className="flex items-center justify-between px-4 md:px-8 py-2 md:py-1 shadow-xl">
       <div className="flex">
         <img
           src="../../public/images/header-logo.png"
           alt=""
           className="w-[80px] sm:w-[115px] object-cover"
         />
-        <ul className="hidden lg:flex  ml-8 gap-8 text-[18px] font-semibold ">
+        <ul className="hidden lg:flex  ml-8 gap-8 text-[16px] font-semibold ">
           {menus.map((menu, index) => (
             <li key={index} className="flex items-center cursor-pointer gap-2 ">
               <menu.icon />
@@ -38,7 +38,7 @@ const Header = () => {
           ))}
         </ul>
         {/* mobile screen */}
-        <ul className="flex lg:hidden ml-8 gap-4 sm:gap-8 text-[18px] font-semibold ">
+        <ul className="flex lg:hidden ml-8 gap-4 sm:gap-8 text-[16px] font-semibold ">
           {menus.map(
             (menu, index) =>
               index < 3 && (
@@ -58,7 +58,7 @@ const Header = () => {
               }}
             />
             {toggle ? (
-              <div className=" absolute top-16 -left-12 bg-black/15 px-5 py-3 rounded border border-black/20">
+              <div className=" absolute top-16 -left-12 bg-black/80 px-5 py-3 rounded border border-black/20 z-10">
                 {menus.map(
                   (menu, index) =>
                     index > 2 && (
@@ -80,8 +80,7 @@ const Header = () => {
       </div>
       <div className="overflow-hidden rounded-full">
         <img
-          width={50}
-          height={50}
+          className="w-[40px] h-[40px] object-cover rounded-full cursor-pointer"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKet-b99huP_BtZT_HUqvsaSz32lhrcLtIDQ&usqp=CAU"
           alt=""
         />
