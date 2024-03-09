@@ -3,6 +3,7 @@ import React from "react";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Productionhouse from "./components/Productionhouse";
+import GenreMovieList from "./components/GenreMovieList";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Header />
       <Slider />
       <Productionhouse />
+      <GenreMovieList />
     </div>
   );
 };

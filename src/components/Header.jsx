@@ -20,7 +20,7 @@ const Header = () => {
     { name: "Series", icon: HiTv },
   ];
   return (
-    <header className="flex items-center justify-between px-4 md:px-8 py-2 md:py-1 shadow-xl">
+    <header className="flex items-center justify-between px-4 md:px-8 py-2 md:py-4 shadow-xl">
       <div className="flex">
         <img
           src="../../public/images/header-logo.png"
