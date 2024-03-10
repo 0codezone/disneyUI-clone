@@ -44,7 +44,7 @@ const MovieList = ({ genereId }) => {
       />
 
       <div
-        className="flex py-1 md:py-3 gap-2 md:gap-4 w-full overflow-x-auto scrollbar-none scroll-smooth "
+        className="flex py-1 md:py-3 gap-2 md:gap-4 w-full overflow-x-auto scrollbar-none scroll-smooth"
         ref={elementRef}
       >
         {movies.map((movies, index) => {
